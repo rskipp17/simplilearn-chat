@@ -12,7 +12,7 @@ var clientInfo = {};
 const MongoClient = require('mongodb').MongoClient;
 var collection;
 
-const uri = "mongodb+srv://ryan:ryan123@cluster0.snr6f.mongodb.net/chatdb?retryWrites=true&w=majority";
+const uri = //database link
 const client = new MongoClient(uri, { useUnifiedTopology: true });
 client.connect(err => {
 	collection = client.db("chatdb").collection('messages')
